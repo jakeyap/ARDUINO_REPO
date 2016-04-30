@@ -1,0 +1,12 @@
+This folder contains the following files
+
+DISPLAY.c	--->	To be uploaded onto an Arduino UNO
+>>> Arduino does the following 
+	Listens to the 2.4 GHz band using a NRF24L01 radio module
+	Controls an LCD display sitting on my desk
+	Displays anything received
+
+BROADCAST	--->	To be uploaded onto an Arduino Nano
+>>> Arduino
+	Has a running counter
+	Broadcasts a running sum on 2.4 GHz using the NRF24L01
