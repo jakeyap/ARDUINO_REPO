@@ -6,7 +6,7 @@ DISPLAY.c	--->	To be uploaded onto an Arduino UNO
 	Controls an LCD display sitting on my desk
 	Displays anything received
 
-BROADCAST	--->	To be uploaded onto an Arduino Nano
+BROADCAST.c	--->	To be uploaded onto an Arduino Nano
 >>> Arduino
 	Has a running counter
 	Broadcasts a running sum on 2.4 GHz using the NRF24L01
