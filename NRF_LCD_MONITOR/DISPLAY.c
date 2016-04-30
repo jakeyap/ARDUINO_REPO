@@ -72,18 +72,16 @@ void loop() {
          lcd.clear();
          lcd.home();
          lcd.print(String(packetdata));
+      } else {
+         delay(100);
+         counter++;
       }
    } while (!Mirf.rxFifoEmpty());
    
-	//lcd.clear();
-	//lcd.home();
-	//lcd.print(counter);
-	counter++;  //increment the lag counter
-	delay(300);
-   if (counter>10){
+   if (counter>100){
       lcd.clear();
       lcd.home();
       lcd.print("No packet...");
-      counter = 10;
+      counter = 50; // Show no packet if 5s no data
    }
 }
